@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+}
+
+.navlink {
+    padding : 18px;
+    color: black;
+    font-size : 1.3em;
+}
+
+#main_title{
+    font-size: 2em;
+}
+
+#sub_title{
+    color: white;
+}
