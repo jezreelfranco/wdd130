@@ -1,17 +1,54 @@
+/* shows the boxes of each element of the page
+*{
+    border:2px solid red;
+}
+*/
 body {
-    background-color: aquamarine;
+    background-color: #669bbc;
+    margin:0;
+    padding:0;
 }
-
+#content {
+    max-width: 100px;
+    margin:0 auto;
+}
+header, footer{
+    background-color:white;
+}
 .navlink {
-    padding : 18px;
+    padding : 20px;
     color: black;
-    font-size : 1.3em;
+    text-decoration:none;
+    /* takes out the underline in link*/
+    font-size:1.3em;
 }
-
+nav{
+    display:flex; /* doeant make the etxt wrap around*/
+    justify-content:center; /* centers text*/
+}
+img{
+    width: 60%;
+    display: block;
+    margin: 0 auto; /* , FIRST VALUE= (0), TOP AND BOTTOM OF BOX| SECOND VALUE (AUTO)-Automatically taking whatever on left or right anf making equL.d*/
+}
+nav a {
+    text-decoration:none;
+    text-align:center;
+}
+nav a:hover {
+    color:white;
+    background-color: bisque;
+}
+p{
+    text-align:center; /* for block level*/
+}
 #main_title{
     font-size: 2em;
+    text-align:center;
 }
-
 #sub_title{
     color: white;
+}
+footer{
+    padding:20px
 }
