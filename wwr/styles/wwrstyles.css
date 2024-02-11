@@ -10,7 +10,6 @@ body {
 header {
     background-color:#6fa295;
 }
-/* is this the same as .msg h2? */
 h2{
     margin: 0;
 }
@@ -101,7 +100,7 @@ main section {
     font-size: .8em;
     padding-bottom: 15px;
 }
-.mountains{
+.mountains{ 
     margin: 100px 0px 200px 0px;
 }
 footer {
