@@ -3,10 +3,19 @@
     border:2px solid red;
 }
 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
 body {
-    background-color: #669bbc;
+    background-color: #a3b18a;
+    /* background-color: #A0DCD6 */
     margin:0;
     padding:0;
+    font-family: 'Oswald', 'Inter', serif;    /* to change font uae"font-family", good practice to have backup fonts*/
+}
+h1{
+    font-family: "Permanent Marker";
+    color: black;
 }
 #content {
     max-width: 100px;
@@ -30,6 +39,8 @@ img{
     width: 60%;
     display: block;
     margin: 0 auto; /* , FIRST VALUE= (0), TOP AND BOTTOM OF BOX| SECOND VALUE (AUTO)-Automatically taking whatever on left or right anf making equL.d*/
+    padding: 20px;
+    background-color: bisque;
 }
 nav a {
     text-decoration:none;
@@ -40,7 +51,16 @@ nav a:hover {
     background-color: bisque;
 }
 p{
+    width: 60%;
     text-align:center; /* for block level*/
+    margin: 0 auto;
+    padding: 5px;
+    color:black;
+    font-size: 1.2em;
+    line-height: 1.5 em;
+    border: 15px;
+    box-sizing: border-box;
+    /* background-color: white;  */
 }
 #main_title{
     font-size: 2em;
