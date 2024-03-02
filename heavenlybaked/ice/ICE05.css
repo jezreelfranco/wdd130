@@ -1,0 +1,12 @@
+#background {
+    height:725px;
+    background-color: gray;
+    margin: 0 auto;
+}
+div{
+    text-align: center;
+    margin: 0 auto;
+}
+.desk{
+    border: 10px solid #6fa295;
+}
