@@ -232,18 +232,20 @@ h4 {
     display: inline-flex;
     grid-template-columns: 1fr 1fr;
 }
-#Arizona-text h5 {
-    grid-column: 2/3;
-    vertical-align: middle;
-    text-align: left;
-    font-size: 16px;
-    padding: 15px;
-}
 #Arizona-text img
 {
     width: 50%;
     grid-column: 1/2;
+    border: 10px  #6fa295;
 }
+#Arizona-text h5 {
+    grid-column: 2/3;
+    align-items: center;
+    text-align: left;
+    font-size: 16px;
+    padding: 15px;
+}
+
 
 
 
