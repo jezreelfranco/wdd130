@@ -4,8 +4,13 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 body{
     background-color: white;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 header {
     background-color: #bee3db;
@@ -13,12 +18,13 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 nav a {
     display: inline-flex;
     color:white;
     text-align: center;
-    font-size: 25px;
+    font-size: 50px;
     padding: 15px;
     margin-right: 200px;
     margin-left: 200px;
@@ -42,9 +48,16 @@ a:hover {
     display: grid;
     position: relative;
 } */
-.top {
+.hero {
     display: grid;
     grid-template-columns: repeat(26, 1fr);
+    background-image: url(/heavenlybaked/images/pink.png);
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     /* height: 300px; */
 }
 .family {
@@ -56,22 +69,18 @@ a:hover {
 .cupcake {
     grid-column: 24/26;
     grid-row: 4/6;
+    position: relative;
 }
 .background_photo {
     grid-column: 20/25;
     grid-row: 5/10;
+    position: relative;
 }
 .blueberry {
     grid-column: 19/21;
     grid-row: 9/11;
     z-index: 1;
-}
-.background {
-    grid-column: 1/27;
-    z-index: -1;
-}
-.background img{
-    width: 100%
+    position: relative;
 }
 .family img {
     width:100%;
@@ -89,74 +98,110 @@ a:hover {
     width: 100%;
     border: 10px solid #FDEED9;
 }
-.create_message p {
+
+.hero_text {
+    display: flexbox;
+}
+.create {
     font-family: "Righteous";
-    font-size: 20%;;
+    font-weight: bold;
+    color: white;
+    font-size: 170px;
+    grid-column: 12/19;
+    grid-row: 5;
+    margin-top: -22%;
+    margin-left: 45%;
+    position: relative;
+    z-index: 2;
 }
-
-
-
-
-
-/* .images {
+@keyframes glowing {
+    0% { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FDEED9, 0 0 30px #FDEED9, 0 0 40px #FDEED9, 0 0 55px #FDEED9, 0 0 75px #FDEED9; }
+    100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FDEED9, 0 0 70px #FDEED9, 0 0 80px #FDEED9, 0 0 100px #FDEED9, 0 0 150px #FDEED9; }
+}
+.happiness{
+    font-family: "Sacramento";
+    color:white;
+    letter-spacing: 0.2em;
+    font-size: 125px;
+    animation: glowing 1s infinite alternate;
+    color: white;
+    position: relative;
+    margin-left: 57%;
+    margin-top: -2%;
+    z-index:2;
+}
+.display {
+    height: 500px;
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    height: 30%;
-    /* width:auto; */
-/* /} */ 
-/* .background {
-    grid-column: 5/21;
-    grid-row: 4/9; 
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 25%;
 }
-.background img {
-    display: block; */
-    /* width: 100%; */
-/* } */
-/* .cupcake {
-    grid-column: 19/26;
-    grid-row: 3/5;
-    z-index: 1;
+h4 {
+    font-family: "IM Fell French Cannon SC", "Shantell Sans", "serif";
+    font-size: 4em;
+    color: #573C27;
+    text-align: center;
+    margin-top: 27%;
+    margin-bottom: -400px;
+    padding-bottom: 80px;
+    height: 400px;
 }
-.cupcake img {
-    width: 50%;;
+.cheesecake {
+    grid-template-columns: 1/2;
+    margin: 0 auto;
 }
-.cookie img {
-    width: 150px;
-} */
-/* #background {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+.choco_cookie {
+    grid-template-columns: 2/3;
+    margin: 0 auto;
 }
-#background_pic .background {
-    grid-template-columns: 2/6;
-    grid-template-rows: 3/5;
-} */
+.brownie {
+    grid-template-columns: 3/4;
+    margin: 0 auto;
+}
+.lemon_muffin {
+    grid-template-columns: 4/5;
+    margin: 0 auto;
+}
+.cheesecake img, .choco_cookie img, .brownie img, .lemon_muffin img {
+    border-radius: 50%;
+    height: 600px;
+    width:600px;
+    margin-top: 100px;
+    box-sizing: border-box;
+    border: 10px solid #573C27;
+    box-shadow: 5px 5px 10px #bee3db;
+    transition: transform .5s;
+}
+
 
 .heading {
-    width: 20%;
+    width: 30%;
+    margin: 0 auto;
 }
 .text{
     width: 90%;
     padding: 5px;
+    margin: 0 auto;
 }
 h1 {
     background-color: #F5B194;
     color: #573C27;
     font-family: 'Shantell Sans';
-    font-size: 30px;
-    text-align: center;
+    font-size: 60px;
+    text-align:center;
 }
-p {
+.text p {
     font-family: 'Source Code Pro';
-    font-size: 25px;
+    font-size: 80px;
     background-color: #FDEED9;
     color: #573C27;
     margin: 10px;
+    margin-bottom: 40px;;
 }
 
 p2 {
     font-family: 'Source Code Pro';
-    font-size: 25px;
+    font-size: 50px;
     color: white;
     display: block;
 }
@@ -169,5 +214,25 @@ footer {
 }
 .facebook, .twitter, .instagram {
     border-radius: 50%;
-    width: 70px;
+    width: 130px;
+}
+
+@media screen and (max-width: 100px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        /* margin-top: 0; */
+        display: grid; 
+        grid-template-columns: 1fr 3fr 1fr;
+        margin-top: -100px;
+    }
 }
