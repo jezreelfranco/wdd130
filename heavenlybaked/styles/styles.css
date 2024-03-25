@@ -51,8 +51,8 @@ a:hover {
 .hero {
     display: grid;
     grid-template-columns: repeat(26, 1fr);
-    background-image: url(/heavenlybaked/images/pink.png);
-    background-color: #F5B194;
+    background-image: url(../images/pink.png);
+    /* background-color: #F5B194; */
     padding-top: 1.5%;
     padding-bottom: 1.5%;
     background-position: center;
