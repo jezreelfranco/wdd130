@@ -235,3 +235,18 @@ footer {
         width: 20%;
     }
 }
+
+/* PAGE TWO */
+h5 {
+    font-family: "IM Fell French Cannon SC", "Shantell Sans", "serif";
+    font-size: 4em;
+    background-color: #F5B194;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+p3{
+    font-family: 'Source Code Pro';
+    font-size: 80px;
+    background-color: #FDEED9;
+}
