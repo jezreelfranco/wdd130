@@ -128,7 +128,7 @@ a:hover {
     color: white;
     position: relative;
     margin-left: 57%;
-    margin-top: -2%;
+    margin-top: -4%;
     z-index:2;
 }
 .display {
@@ -173,8 +173,6 @@ h4 {
     box-shadow: 5px 5px 10px #bee3db;
     transition: transform .5s;
 }
-
-
 .heading {
     width: 30%;
     margin: 0 auto;
