@@ -21,25 +21,27 @@ header {
     font-family: "IM Fell French Cannon SC", "Shantell Sans", "serif";
     align-items: center;
     /* display: flex; */
-    display: flex;
+    /* display: flex; */
     /* flex-wrap: nowrap; */
     justify-content: center;
     position: relative;
-    height: 7em;
+    height: auto;
     width: 100%;
 }
 nav {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    width: auto;
 }
 nav a {
     display: inline;
     color:white;
     text-align: center;
     font-size: 1.5em;
-    margin-right: 200px;
-    margin-left: 200px;
-    position: relative;
+    /* margin-right: 200px; */
+    /* margin-left: 200px; */
+    /* position: relative; */
+    padding: 1rem;
 
 }
 a:link, a:visited {
